@@ -1,0 +1,25 @@
+{
+	"name": "popular-times",
+	"author": {
+		"name": "Amir Yeganemehr",
+		"email": "yeganemehr@yahoo.com"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/yeganemehr/js-popular-times",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yeganemehr/js-popular-times.git"
+	},
+	"description": "It's a simple crawler for Google Maps Popular Time component",
+	"devDependencies": {
+		"@types/node": "^22.10.0",
+		"typescript": "^5.7.2"
+	},
+	"scripts": {
+		"build": "tsc",
+		"dev" : "tsc -w"
+	},
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"type": "commonjs"
+}
