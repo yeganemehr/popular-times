@@ -26,6 +26,10 @@ export default async function getPopularTimes(placeId: string): Promise<IWeek> {
 	const second = eval(payload);
 	const rawData = second[6][84];
 
+	if (!rawData || rawData[0] === undefined) {
+		throw new Error("popular times are not provided");
+	}
+
 	const week: IWeek = [];
 	for (const dayRawData of rawData[0]) {
 		const day: IWeekDay = {};
